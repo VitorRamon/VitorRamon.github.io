@@ -29,6 +29,10 @@
       --icon-color: #56575A;
   }
 
+  html[data-theme='dark'] .brand_logo {
+    filter: invert(1);
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -44,6 +48,11 @@ body {
 
 a {
     text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-bg-color);
+    font-weight: 600;
 }
 
 i {
@@ -72,6 +81,8 @@ i {
 #toggleTheme {
     font-size: 1.5rem;
     color: var(--primary-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
 }
 
 
@@ -132,6 +143,16 @@ i {
     gap: 1rem;
 }
 
+footer {
+    margin-bottom: 5rem;
+  }
+  
+  footer p {
+    font-size: .875rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
 @media (min-width: 768px){
 
     .header{
@@ -153,6 +174,10 @@ i {
     .header_toggle{
         min-width: 30%;
     }
+
+    footer {
+        margin: 0;
+      }
 }
 
 @media (min-width: 1400px){
