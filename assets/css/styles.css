@@ -59,6 +59,11 @@ i {
     padding: 0.5rem 1rem;
 }
 
+.header_toggle{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header_brand .brand_logo{
     width: 3.25rem;
     height: 3.25rem;
@@ -98,7 +103,9 @@ i {
 }
 
 .menu-link.active .menu_icon, 
-.menu-link.active .menu_text{
+.menu-link.active .menu_text,
+.menu-link:hover .menu_icon, 
+.menu-link:hover .menu_text{
     color: var(--primary-color);
     font-weight: 600;
 }
@@ -116,8 +123,42 @@ i {
     text-transform: uppercase;
 }
 
+.header_nav {
+    display: none;
+}
+
+
+.menu-principal{
+    gap: 1rem;
+}
+
 @media (min-width: 768px){
-    .menu-mobile{
+
+    .header{
+        position: fixed;
+        border-bottom: 1px solid var(--primary-border-color);
+        padding: 1rem 4rem;
+        background-color: var(--primary-bg-color);
+    }
+
+    .nav-mobile{
         display: none;
+    }
+
+    .header_nav {
+        display: flex;
+    }
+
+    .header_nav,
+    .header_toggle{
+        min-width: 30%;
+    }
+}
+
+@media (min-width: 1400px){
+    .header{
+        position: fixed;
+        border-bottom: 1px solid var(--primary-border-color);
+        padding: 1rem 15rem;
     }
 }
