@@ -33,6 +33,10 @@
     filter: invert(1);
   }
 
+  html[data-theme='light'] .skills {
+    filter: invert(80%);
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -66,6 +70,12 @@ b{
 h1{
     font-size: 2.5rem;
     font-weight: 200;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 h1, h2, h3{
@@ -164,6 +174,10 @@ p{
     gap: 1rem;
 }
 
+main, .projects{
+    padding: 2.5rem 1rem;
+}
+
 main{
     padding: 2.5rem 1rem;
     display: flex;
@@ -193,9 +207,11 @@ main{
     align-items: center;
     gap: 0.625rem;
     border-radius: 3.125rem;
+    border: none;
     width: 100%;
     padding: 0.875rem 1.5rem;
     transition: ease-in-out .3s;
+    color: var(--primary-color);
 }
 
 .btn:hover{
@@ -217,30 +233,29 @@ main{
     text-transform: uppercase;
 }
 
-.skills{
+.technologies{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 1.25rem;
-    padding: 6.25rem 1rem 2rem 1rem;
+    padding: 6.25rem 1rem 2rem;
     background: var(--secondary-bg-color);
     margin-top: -5.5rem;
 }
 
-.skills h2{
+.technologies h2{
     text-transform: none;
     font-size: 2rem;
 }
 
-.skills__list{
+.technologies__list{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     gap: .5rem;
 }
 
-.skills__item{
+.technologies__item{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -252,8 +267,53 @@ main{
     border-radius: 50rem;
 }
 
-.skills__logo{
+.technologies__logo{
     height: 2.4rem;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__cover{
+    width: 100%;
+}
+
+.card__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card__title{
+    font-size: 1.5rem;
+}
+
+.card__description{
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.card__buttons{
+    display: flex;
+}
+
+.card__body .technologies__item{
+    width: 4rem;
+    height: 4rem;
+}
+
+.card__body .technologies__logo{
+    height: 2rem;
 }
 
 footer {
@@ -292,7 +352,12 @@ footer p {
         font-size: 4rem;
     }
 
-    main{
+    h2{
+        font-size: 3rem;
+        letter-spacing: 0.4rem;
+    }
+
+    main, .projects{
         padding: 8rem 6rem 4rem 6rem;
     }
 
@@ -302,7 +367,7 @@ footer p {
         align-items: flex-start;
     }
 
-    .skills{
+    .technologies{
         padding: 6.25rem 6rem 2rem 6rem;
         margin-top: -6rem;
     }
@@ -315,6 +380,10 @@ footer p {
 
 @media(min-width: 1200px){
 
+    h2{
+        font-size: 4rem;
+    }
+
     main{
         padding: 12rem 6rem 2rem;
     }
@@ -323,28 +392,48 @@ footer p {
         width: auto;
     }
 
-    .skills{
+    .technologies{
         flex-direction: row;
         justify-content: space-between;
         padding: 10rem 6rem 4rem 6rem;
     }
 
-    .skills h2{
+    .technologies h2{
         font-size: 3.5rem;
         width: 60%;
     }
 
-    .skills__item{
+    .technologies__item{
         width: 6rem;
         height: 6rem;
     }
 
-    .skills__list{
+    .technologies__list{
         gap: 1rem;
     }
 
-    .skills__logo{
+    .technologies__logo{
         height: 3rem;
+    }
+
+    .projects__card{
+        flex-direction: row;
+    }
+
+    .card__cover{
+        width: 50%;
+    }
+
+    .card__title{
+        font-size: 3.25rem;
+    }
+
+    .card__description, .card__item{
+        font-size: 1.25rem;
+    }
+
+    .card__buttons .btn{
+        width: auto;
     }
 }
 
@@ -352,6 +441,10 @@ footer p {
 
     h1{
         font-size: 6.25rem;
+    }
+
+    h2{
+        font-size: 5rem;
     }
 
     p{
@@ -366,7 +459,7 @@ footer p {
         padding: 12rem 15rem 2rem;
     }
 
-    .skills{
+    .technologies{
         padding: 10rem 15rem 4rem;
     }
 }
