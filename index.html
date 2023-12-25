@@ -13,98 +13,104 @@
 <body>
     <header class="header">
 
-        <nav class="header_nav">
-            <ul class="menu menu-principal">
-                <li class="menu-item">
-                    <a class="menu-link active" href="#home">
-                        <span class="menu_text">Home</span>
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                    <a class="menu__link active" href="#home">
+                        <span class="menu__text">Home</span>
                     </a>
                 </li>
     
-                <li class="menu-item">
-                    <a class="menu-link" href="#projetos">
-                        <span class="menu_text">Projetos</span>
+                <li class="menu__item">
+                    <a class="menu__link" href="#projetos">
+                        <span class="menu__text">Projetos</span>
                     </a>
                 </li>
     
-                <li class="menu-item">
-                    <a class="menu-link" href="#sobre">
-                        <span class="menu_text">Sobre</span>
+                <li class="menu__item">
+                    <a class="menu__link" href="#sobre">
+                        <span class="menu__text">Sobre</span>
                     </a>
                 </li>
             
-                <li class="menu-item">
-                    <a class="menu-link" href="#contato">
-                        <span class="menu_text">Contato</span>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contato">
+                        <span class="menu__text">Contato</span>
                     </a>
                 </li>
             </ul>
         </nav>
 
-        <div class="header_brand">
-            <img class="brand_logo" src="/assets/imgs/logo.jpg" alt="logo VR">
+        <div class="header__brand">
+            <a href="#home">
+                <img class="brand__logo" src="/assets/imgs/logo.jpg" alt="logo VR">
+            </a>
         </div>
 
-        <div class="header_toggle">
+        <div class="header__toggle">
             <i id="toggleTheme" class="bi bi-sun"></i>
         </div>
         
     </header>
-    <nav class="nav-mobile">
-        <ul class="menu menu-mobile">
-            <li class="menu-item">
-                <a class="menu-link active" href="#home">
-                    <i class="menu_icon  bi bi-house-door"></i>
-                    <span class="menu_text">Home</span>
+
+    <nav class="nav--mobile">
+        <ul class="menu menu--mobile">
+            <li class="menu__item">
+                <a class="menu__link active" href="#home">
+                    <i class="menu__icon  bi bi-house-door"></i>
+                    <span class="menu__text">Home</span>
                 </a>
             </li>
 
-            <li class="menu-item">
-                <a class="menu-link" href="#projetos">
-                    <i class="menu_icon  bi bi-window-stack"></i>
-                    <span class="menu_text">Projetos</span>
+            <li class="menu__item">
+                <a class="menu__link" href="#projetos">
+                    <i class="menu__icon  bi bi-window-stack"></i>
+                    <span class="menu__text">Projetos</span>
                 </a>
             </li>
 
-            <li class="menu-item">
-                <a class="menu-link" href="#sobre">
-                    <i class="menu_icon  bi bi-person"></i>
-                    <span class="menu_text">Sobre</span>
+            <li class="menu__item">
+                <a class="menu__link" href="#sobre">
+                    <i class="menu__icon  bi bi-person"></i>
+                    <span class="menu__text">Sobre</span>
                 </a>
             </li>
         
-            <li class="menu-item">
-                <a class="menu-link" href="#contato">
-                    <i class="menu_icon  bi bi-envelope"></i>
-                    <span class="menu_text">Contato</span>
+            <li class="menu__item">
+                <a class="menu__link" href="#contato">
+                    <i class="menu__icon  bi bi-envelope"></i>
+                    <span class="menu__text">Contato</span>
                 </a>
             </li>
         </ul>
     </nav>
 
-    <main>
-        <div class="main_content1">
+    <main id="home">
+        <div class="main__content1">
             <h1><b>Soluções Criativas &</b> Desenvolvimento de Sistemas</h1>
             <p>Vitor Ramon, Manaus-AM, Desenvolvedor e Analista de Sistemas.</p>
-            <ul class="menu menu-social">
+            <ul class="menu menu--social">
                 <li>
-                    <a class="menu_link" href="https://github.com/vitorramon">
-                        <i class="menu_icon bi bi-github"></i>
+                    <a class="menu__link" href="https://github.com/vitorramon">
+                        <i class="menu__icon bi bi-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="menu_link" href="https://br.linkedin.com/in/vitorramon">
-                        <i class="menu_icon bi bi-linkedin"></i>
+                    <a class="menu__link" href="https://br.linkedin.com/in/vitorramon">
+                        <i class="menu__icon bi bi-linkedin"></i>
                     </a>
                 </li>
             </ul>
-            <button class="btn btn--primary">
-                <span>Ver Projetos</span>
-                <i class="bi bi-arrow-down-right"></i>
-            </button>
+
+            <a href="#projetos">
+                <button class="btn btn--primary">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"></i>
+                </button>
+            </a>
         </div>
 
-        <div class="main_content2">
+        <div class="main__content2">
             <iframe src="https://www.youtube.com/watch?v=jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </main>
@@ -134,7 +140,7 @@
             Projetos
         </h2>
         <div class="projects__container">
-            <div class="projects__card">
+            <div class="projects__card ">
                 <img class="card__cover" src="/assets/imgs/projects/josisbox.jpg" alt="">
                 <div class="card__body">
                     <h3 class="card__title">Projeto 1</h3>
@@ -142,9 +148,9 @@
                         Uma descrição do projeto
                     </p>
                     <ul class="card__list">
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
+                        <li class="card__item">Item 1</li>
+                        <li class="card__item">Item 2</li>
+                        <li class="card__item">Item 3</li>
                     </ul>
 
                     <ul class="technologies__list">
@@ -173,8 +179,443 @@
                     </div>
                 </div>
             </div>
+            <div class="projects__card card--reverse">
+                <img class="card__cover" src="/assets/imgs/projects/josisbox.jpg" alt="">
+                <div class="card__body">
+                    <h3 class="card__title">Projeto 2</h3>
+                    <p class="card__description">
+                        Uma descrição do projeto
+                    </p>
+                    <ul class="card__list">
+                        <li class="card__item">Item 1</li>
+                        <li class="card__item">Item 2</li>
+                        <li class="card__item">Item 3</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="/assets/imgs/tecnologias/Angular.svg" alt="logo Angular">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="/assets/imgs/tecnologias/TypeScript.svg" alt="logo TypeScript">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="/assets/imgs/tecnologias/Bootstrap.svg" alt="logo Bootstrap">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="/assets/imgs/tecnologias/SASS.svg" alt="logo SASS">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__card ">
+                <img class="card__cover" src="/assets/imgs/projects/josisbox.jpg" alt="">
+                <div class="card__body">
+                    <h3 class="card__title">Projeto 3</h3>
+                    <p class="card__description">
+                        Uma descrição do projeto
+                    </p>
+                    <ul class="card__list">
+                        <li class="card__item">Item 1</li>
+                        <li class="card__item">Item 2</li>
+                        <li class="card__item">Item 3</li>
+                    </ul>
+
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="/assets/imgs/tecnologias/Angular.svg" alt="logo Angular">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="/assets/imgs/tecnologias/TypeScript.svg" alt="logo TypeScript">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="/assets/imgs/tecnologias/Bootstrap.svg" alt="logo Bootstrap">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="/assets/imgs/tecnologias/SASS.svg" alt="logo SASS">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/vitorramon">
+                <button class="btn btn--primary">
+                    <span>Ver todos os Projetos</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>
+            </a>
         </div>
     </section>
+
+    <section id="sobre" class="about">
+        <div class="about__content1">
+          <img class="about__photo" src="/assets/imgs/avatar.jpg" alt="">
+          <div class="about__description">
+            <h2>Sobre mim</h2>
+            <p>Entusiasta de informática desde criança, a minha paixão por explorar novas tecnologias e ambientes alimenta meu entusiasmo para atualizar-me constantemente. Busco proporcionar sistemas inovadores para a melhoria dos fluxos de trabalho dentro das empresas, visando assim, implantar soluções eficientes que tornem o ambiente de trabalho mais estimulante e produtivo.
+                Desse modo, minha missão é não somente acompanhar os avanços da indústria, mas também liderar sua evolução.
+            </p>  
+            <div class="about__icons">
+              <i class="bi bi-translate"></i>
+              <span>Inglês: Intermediário</span>
+            </div>
+            <div class="description__buttons">
+              <a href="https://www.linkedin.com/in/vitorramon/" target="_blank">
+                <button class="btn btn--primary">
+                  <span>Conecte-se Comigo</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button> 
+              </a>
+              <a href="">
+                <button class="btn">
+                  <span>Currículo</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about__content2">
+          <div class="col1">
+            <div class="row1">
+              <h3>Formação</h3>
+              <h4>Análise e Desenvolvimento de Sistemas</h4>
+              <span>Agosto/2022 - Atualmente</span>
+              <div class="about__icons">
+                <i class="bi bi-bank"></i>
+                <span>Faculdade Martha Falcão</span>
+              </div>
+              <div class="about__icons">
+                <i class="bi bi-mortarboard"></i>
+                <span>Ensino Superior - Graduação</span>
+              </div>
+            </div>
+            <div class="row2">
+              <h3>Experiência</h3>
+              <h4>IT Technical Analyst</h4>
+              <span>Tecnologia da Informação e Comunicação do Norte - TIC</span>
+              <span>Set/2023 - Atualmente</span>
+              <span>
+                Responsável pelo Setor de Informática.
+              </span>
+              <ul class="about__list">
+                <li class="about__item">Administração de domínio: Criação e gerenciamento de contas de usuário, grupos e permissões.</li>
+                <li class="about__item">Instalação e configuração de serviços de rede: DNS, DHCP, servidores, switches, KVMs e dispositivos VoIP.</li>
+                <li class="about__item">Suporte aos sistemas web da Federação(SISCON | SEI).</li>
+                <li class="about__item">Implantação e manutenção de infraestruturas em uma variedade de ambientes, incluindo servidores físicos, máquinas virtuais locais e plataformas em nuvem, como a AWS.</li>
+              </ul>
+
+              <h4>Network Intern</h4>
+              <span>Tecnorádio Soluções em Comunicação</span>
+              <span>Set/2023 - Atualmente</span>
+              <span>
+                Estagiário de Redes
+              </span>
+              <ul class="about__list">
+                <li class="about__item">Montagem, manutenção preventiva e corretiva de computadores.</li>
+                <li class="about__item"> Suporte aos Usuários nos setores da instituição.</li>
+                <li class="about__item">Instalação, configuração e manutenção de redes de computadores.</li>
+                <li class="about__item">Configuração de servidores NVR.</li>
+                <li class="about__item">Criação de servidores de bancos de dados.</li>
+                <li class="about__item">Programação de servidor back-end e de interface gráfica.</li>
+                <li class="about__item"> Modelagem de Bancos de Dados.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col2">
+            <h3>Cursos</h3>
+            <div id="accordion">
+              <div class="accordion__item active">
+                <button class="accordion__header start">
+                  <span>Análise de dados | Em andamento</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <div class="accordion__body">
+                  <p>
+                    GOOGLE
+                  </p>
+                  <p>
+                    O curso de Análise de Dados aborda tópicos como fundamentos da análise de dados, 
+                    coleta e limpeza de dados, técnicas de visualização e exploração de dados, estatística
+                    aplicada, modelagem de dados, utilização de ferramentas e linguagens de programação 
+                    para análise, interpretação de resultados e tomada de decisões embasadas em dados. 
+                    Ao concluir o curso, os participantes estarão capacitados para extrair insights 
+                    valiosos de conjuntos de dados complexos e contribuir significativamente para a 
+                    tomada de decisões estratégicas em diversos contextos.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button class="accordion__header">
+                  <span>Linux Fundamentals</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <div class="accordion__body">
+                  <p>
+                    Digital Innovation One. Ago 2023.
+                  </p>
+                  <p>
+                    Participei do curso "Linux Fundamentals", onde obtive uma sólida formação em administração 
+                    e utilização do sistema operacional Linux, incluindo tópicos como introdução ao Linux, 
+                    gerenciamento de usuários, arquivos e permissões, administração de pacotes e discos, configuração de serviços 
+                    como servidores de arquivos, web e banco de dados, e utilizei o Linux em conjunto com a plataforma AWS 
+                    (Amazon Web Services) para criar e provisionar servidores web. Essa formação aprimorou minha capacidade 
+                    de trabalhar com eficiência no Linux e na AWS.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button class="accordion__header end">
+                  <span>Spring Framework Experience</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <div class="accordion__body end">
+                  <p>
+                    Digital Innovation One. Jul 2023.
+                  </p>
+                  <p>
+                    O curso de Spring Framework Experience aborda tópicos como introdução ao Spring Framework,
+                     injeção de dependência, configuração com XML e anotações, criação de controladores, 
+                     persistência de dados com Spring Data JPA, desenvolvimento de APIs RESTful com 
+                     Spring MVC, segurança com Spring Security, integração com bancos de dados, teste de 
+                     unidades com JUnit, além de práticas avançadas para construção de aplicações robustas 
+                     e escaláveis utilizando o poderoso framework Spring.
+                  </p>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>Cybersecurity Speacialist</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        Digital Innovation One. Jun 2023.
+                      </p>
+                      <p>O curso de Cybersecurity Specialist aborda tópicos como Fundamentos de Segurança 
+                        Cibernética, Criptografia e Segurança de Dados, Segurança de Redes e Firewalls, 
+                        Detecção e Prevenção de Intrusões, Testes de Penetração e Vulnerabilidades, 
+                        Gerenciamento de Identidade e Acesso, Resposta a Incidentes de Segurança e Boas Práticas
+                        em Segurança Cibernética. Visa a oportunidade de aprofundar os conhecimentos em 
+                        proteção de sistemas, redes e dados, bem como aprender as melhores estratégias para 
+                        enfrentar ameaças cibernéticas e garantir a segurança da informação em ambientes 
+                        corporativos.</p>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>Administração do Fortigate F60</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        Digital Innovation One. Jun 2023.
+                      </p>
+                      <p>O treinamento de Administração do Fortigate F60 abordou tópicos essenciais para 
+                        gerenciamento eficiente desse dispositivo de segurança. Visa aprender sobre a 
+                        configuração e administração do Fortigate F60, incluindo gerenciamento de políticas de 
+                        segurança, firewall, VPN, análise de tráfego, prevenção de intrusões, controle de 
+                        aplicações e outras funcionalidades importantes para garantir a segurança e proteção 
+                        de redes corporativas.
+                    </p>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>Desenvolvimento de Software</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        ASSOCIAÇÃO AMAZONENSE DOS PROFISSIONAIS DE TECNOLOGIA E INOVAÇÃO – AATEC. Mai 2023.
+                      </p>
+                      <p>A mentoria em Desenvolvimento de Software abordou tópicos fundamentais para capacitar 
+                        os mentorados nessa área. Os principais temas incluem conceitos de programação, 
+                        estruturas de dados, algoritmos, paradigmas de programação, boas práticas de codificação
+                        , desenvolvimento ágil, integração contínua, versionamento de código, metodologias 
+                        de teste, arquitetura de software, design patterns e tecnologias atuais. Os mentorados 
+                        tiveram a oportunidade de aprimorar suas habilidades de programação e adquirir 
+                        conhecimentos valiosos para construir aplicações robustas e de alta qualidade, além de 
+                        desenvolver uma mentalidade ágil e colaborativa no processo de desenvolvimento de 
+                        software.
+
+                    </p>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>Orange Tech + - BackEnd</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        Digital Innovation One. Abr 2023.
+                      </p>
+                      <p>O curso de Desenvolvimento BackEnd com SpringBoot abordará tópicos como introdução ao 
+                        Spring Framework, criação e configuração de projetos SpringBoot, desenvolvimento de APIs
+                         RESTful, persistência de dados com JPA e Hibernate, segurança e autenticação de 
+                         endpoints, gerenciamento de dependências com Maven, e implantação de aplicações 
+                         utilizando SpringBoot. Visa aprender a construir sistemas robustos e escaláveis para 
+                         atender às demandas do desenvolvimento de aplicações web e serviços backend de alta 
+                         qualidade.
+                    </p>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>Formação React Developer</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        Digital Innovation One. Fev 2023.
+                      </p>
+                      <p>O curso de Formação React Developer aborda tópicos essenciais para a formação de 
+                        desenvolvedores especializados em React. Entre os temas tratados, estão: fundamentos do
+                         React, criação de componentes, estado e propriedades, roteamento, gerenciamento de 
+                        estado com Redux, utilização de Hooks, integração com APIs, estilização avançada com 
+                        Styled-Components e conceitos de boas práticas em desenvolvimento web com React. 
+                        Visando a capacidade para construir aplicações web modernas, escaláveis e eficientes, 
+                        consolidando um desenvolvedor React proficiente e apto a enfrentar desafios reais no 
+                        mercado de trabalho.
+                    </p>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>Orange Tech + - FrontEnd</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        Digital Innovation One. Dez 2022.
+                      </p>
+                      <p>Curso de Desenvolvimento Front-End com JavaScript, HTML, CSS, TypeScript e React 
+                        abordará tópicos como JavaScript (sintaxe, variáveis, operadores, arrays, funções e 
+                        objetos), React (configuração de ambiente, CLI, estilização, hooks, formulários, ciclo
+                        de vida, requisições), TypeScript (fundamentos, conversão de projetos, validação) 
+                        e outros temas essenciais para construção de aplicações web modernas e interativas.
+                    </p>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>Trabalhando em Equipes Ágeis</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        Digital Innovation One. Dez 2022.
+                      </p>
+                      <p>O curso de Trabalhando em Equipes Ágeis aborda tópicos essenciais para uma colaboração 
+                        eficaz em ambientes ágeis. São tratados temas como: princípios e valores ágeis, 
+                        metodologias Scrum e Kanban, papéis e responsabilidades, planejamento e execução de 
+                        sprints, comunicação e feedback contínuo, resolução de conflitos, retrospectivas e 
+                        melhoria contínua, além de práticas de trabalho colaborativo e ferramentas para o 
+                        sucesso em equipes ágeis. 
+                    </p>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>HTML Web Developer</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        Digital Innovation One. Mar 2022.
+                      </p>
+                      <p>Curso introdutório sobre HTML e construção de páginas web. Aborda na prática como 
+                        estruturar a marcação de páginas, conhecendo cada tag e elementos semânticos. Além 
+                        disso, apresenta a arquitetura cliente x servidor,  a estrutura de páginas, utilizando 
+                        formulários, tabelas e mídias e as habilidades essenciais para criar páginas web de 
+                        qualidade, seguindo as melhores práticas da indústria. 
+                    </p>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>Lei Geral de Proteção de Dados (LGPD)</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        Fundação Bradesco. Out 2021.
+                      </p>
+                      <p>Abordou a importância do tratamento responsável de dados pessoais para proteger os 
+                        indivíduos de exposições abusivas ou desnecessárias. É incluído também os impactos 
+                        positivos e negativos da LGPD nas empresas e como ela afeta a imagem de uma empresa 
+                        no mercado. Além disso, também são tratadas as consequências legais, incluindo 
+                        aplicação de multas, em caso de mau uso dos dados. Estes são conhecimentos essenciais 
+                        para garantir a conformidade e a segurança das informações dos usuários.
+                    </p>
+                </div>
+
+                <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>Jornada de Capacitação Científica</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO AMAZONAS - IFAM. Abr 2021
+                      </p>
+                      <p>Curso de Metodologia Científica e Escrita Científica aborda técnicas para produção de 
+                        artigos científicos, desenvolvimento de pesquisa, normativas da ABNT, ferramentas de 
+                        apoio à pesquisa, técnicas de escrita, elaboração inicial da pesquisa e métodos de 
+                        busca em bases de dados. Indicado para estudantes e profissionais em busca de 
+                        aprimoramento na produção de trabalhos acadêmicos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Contate-me</h2>
+        <p>Estou disponível para serviços e novas conexões. Contate-me via 
+          e-mail e conecte-se comigo através das minhas redes sociais.
+        </p>
+        <ul class="menu menu--social">
+          <li>
+            <a class="menu__link" href="https://github.com/vitorramon" target="_blank">
+              <i class="menu__icon bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="https://www.linkedin.com/in/vitorramon/" target="_blank">
+              <i class="menu__icon bi bi-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+        <a href="mailto:vitorramon.info@gmail.com">
+          <button class="btn btn--primary">
+            <span class="email">vitorramon.info@gmail.com</span>
+          </button>  
+        </a>
+      </section>
+    
 
     <footer>
         <p>©2023 Todos os Direitos Rervados. Desenvolvido por Vitor Ramon. Veja no <a href="https://github.com/vitorramon/vitorramon.github.io">Github</a></p>
